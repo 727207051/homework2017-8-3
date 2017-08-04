@@ -196,12 +196,12 @@ body {
       display: block;
       margin: 0 auto;
       background: #fbf9f9;
-      border: 1px #efefef solid;
       height: 0.58rem;
       width: 5.53rem;
       padding-left: 0.15rem;
       font-size: 0.18rem;
-      color: #8f8f8f; }
+      color: #8f8f8f;
+      box-shadow: none; }
     #content #reg-form span {
       display: block;
       margin-left: 0.45rem;
@@ -238,15 +238,15 @@ body {
       display: flex; }
       #setting dl dd label {
         position: absolute;
-        top: 0;
+        top: 0.2rem;
         left: 4.2rem;
         margin-top: 0rem;
-        height: 0.7rem;
-        width: 1.6rem;
+        height: 0.42rem;
+        width: 1.4rem;
         overflow: hidden; }
       #setting dl dd .simulation {
         position: absolute;
-        top: 0.20rem;
+        top: 0rem;
         width: 1.4rem;
         height: 0.42rem;
         border: 1px #bebfba solid;
