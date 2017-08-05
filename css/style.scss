@@ -7,7 +7,8 @@ html{ font-size: 625%;/*6.25*16=相当于100px;rem的换算参考大小（rem单
 .clearfix:before,.clearfix:after{content:" "; display: table;}
 .clearfix:after{clear:both;}
 input{border: 0;outline: none;}
-input[type="button"],input[type="submit"],input[type="file"],button,label{
+a,label{-webkit-tap-highlight-color:transparent;}
+input[type="button"],input[type="submit"],input[type="file"],button{
     cursor: pointer;
     -webkit-appearance:none;/*去除IP按钮黄色渐变底色*/
 }
@@ -134,7 +135,7 @@ $white:#ffffff;
             display: block;
             margin: 0 auto;
             background: #fbf9f9;
-            //border: 0.005rem #efefef solid;
+            border: 0.005rem #efefef solid;
             height: 0.58rem;
             width: 5.53rem;
             padding-left: 0.15rem;
@@ -203,7 +204,6 @@ $white:#ffffff;
                 &:before{
                     position: absolute;
                     content: "on";
-                    top:-0.03rem;
                     height: 0.42rem;
                     line-height:0.42rem;
                     color: #c4c0bc;   
@@ -215,7 +215,6 @@ $white:#ffffff;
                 &:after{
                     position: absolute;
                     content: "off";
-                    top:-0.03rem;
                     left:0.71rem;
                     color: #3d8715;
                     height: 0.42rem;
@@ -226,17 +225,18 @@ $white:#ffffff;
                 }
             }
              input{
+                position: absolute;
                 opacity: 0;
                 margin-left: -99rem;
                 &:checked+.simulation:before{
                     color:#3d8715;
                     background: #edeee7;
-                    outline: none;
+                    
                 }
                 &:checked+.simulation:after{
                     color:#c4c0bc; 
                     background: #dcddd7;
-                    outline: none;
+                   
                 }
             }
         }
